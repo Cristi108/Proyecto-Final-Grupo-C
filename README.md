@@ -166,3 +166,4 @@ La meta es contribuir a:
 Grupo C
 
 **Gracias por leer nuestro proyecto**
+Realizado por el equipo de Ecovida
