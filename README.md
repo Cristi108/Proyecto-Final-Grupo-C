@@ -4,7 +4,7 @@
 **Ecovida**
 
 # Slogan
-
+**“Tu acción importa, nuestro futuro también”**
 
 # ODS Objetivo
 **ODS 6 - Agua limpia y saneamiento**
@@ -37,18 +37,18 @@ Las posibles causas son:
 
 Aunque hay agua, no siempre llega limpia ni segura a las personas
 
-# Por que es importante?
+# Por qué es importante?
 
 Porque el agua es algo básico que todas las personas usan todos los días.
 Cuando la red que distribuye el agua no funciona bien:
 
-- Entra susiedad o contaminacion
+- Entra suciedad o contaminación
 - Aparecen bacterias
 - Aumentan enfermedades como diarrea y gastroenteritis
 
 Esto afecta tanto a la salud de la población como al sistema de salud, que tiene que tratar más casos.
 
-# A quien afecta?
+# A quién afecta?
 
 Este problema puede afectar a cualquier persona, pero especificamente a:
 
@@ -59,9 +59,8 @@ Este problema puede afectar a cualquier persona, pero especificamente a:
 # Alcance del Proyecto
 
 - **Lugar**: Panama todas las provincias y comarcas
-- **Anos**: 2018 a 2022
+- **Años**: 2018 a 2022
 - **Tema**: Produccion de agua, consumo y enfermedades
-
 
 # Datos Utilizados
 
@@ -71,7 +70,7 @@ Este problema puede afectar a cualquier persona, pero especificamente a:
 | Consumo de agua potable | IDAAN | Consumo total por provincia | 2018–2022 |
 | Enfermedades hidroalimentarias | INEC | Casos reportados por provincia | 2018–2022 |
 
-# Tecnologias utilizadas
+# Tecnologías utilizadas
 
 - Python
 - Pandas
@@ -79,4 +78,91 @@ Este problema puede afectar a cualquier persona, pero especificamente a:
 - Plotly
 - GitHub
 
-# Principales Hallazgo
+# Principales Hallazgos
+
+# Insight 1: Se produce más agua de la que se consume
+En casi todas las provincias, la producción es mayor que el consumo.
+Esto puede significar que se pierde mucha agua antes de llegar a las casas, probablemente por fugas.
+
+# Insight 2: Las enfermedades siguen presentes
+Aunque hay agua, se siguen registrando casos de enfermedades.
+Esto nos hace pensar que el problema no es la cantidad, sino cómo llega el agua.
+
+# Insight 3: Algunas provincias tienen más riesgo
+Las zonas rurales y comarcas pueden tener:
+
+- Tuberias más viejas
+- Poca inversión o mantenimiento
+- Menos acceso a plantas de tratamiento
+  
+Esto las hace más vulnerables.
+
+# Recomendaciones
+
+1. Revisar la infraestructura
+- Identificar fugas, tuberías viejas o rotas
+2. Mejorar el mantenimiento
+- Cambiar tramos dañados y dar mantenimiento frecuente
+3. Monitorear la calidad del agua
+- Hacer pruebas regulares, especialmente en provincias rurales
+
+# Proximos Pasos
+
+- Comparar provincia por provincia
+- Ver dónde hay más pérdidas de agua
+- Diseñar soluciones prioritarias según los hallazgos
+
+# Impacto Esperado
+
+- Más de 4 millones de personas beneficiadas
+- Menos casos de enfermedades transmitidas por el agua
+- Mejores servicios para toda la población
+
+La meta es contribuir a:
+
+- ODS 6: Agua limpia
+- ODS 3: Salud y bienestar
+
+# Arquitectura del Proyecto
+
+```text
+
+└── flujo-datos/
+    ├── 01-obtencion/                          # Obtención de datos (.csv)
+    │       ├── datos_agua.csv                 
+    │       ├── hidroalinentarias.csv          
+    │       └── consumo.csv                    
+    │                                           # Herramienta: pandas.read_csv()
+    │
+    ├── 02-limpieza/                           # Limpieza de datos
+    │       └── limpieza.py                    # Herramientas: Pandas (drop, rename, astype, split)
+    │                                           # Acciones: eliminar columnas, corregir tipos, separar textos, manejar nulos
+    │
+    ├── 03-integracion/                        # Integración / Unión de datasets
+    │       └── merge.py                       # Herramienta: Pandas (merge)
+    │                                           # Acción: unir producción + enfermedades por país
+    │
+    ├── 04-transformacion/                     # Transformación de datos
+    │       └── transform.py                   # Herramientas: Pandas + NumPy
+    │                                           # Acciones: groupby, sum, mean, ordenar, convertir fechas
+    │
+    ├── 05-visualizacion/                      # Visualización de resultados
+    │       └── graficos.py                    # Herramientas: Matplotlib + Seaborn
+    │                                           # Gráficos: líneas, comparativos, countplot
+    │
+    └── 06-resultados/                         # Resultados finales
+            ├── dataset_limpio.csv             # Dataset procesado
+            └── visualizaciones/               # Imágenes generadas
+
+```
+
+# Agradecimientos
+
+- Tech Horizons
+- IDAAN e INEC
+- Comunidad open source
+
+# Contacto
+Grupo C
+
+**Gracias por leer nuestro proyecto**
