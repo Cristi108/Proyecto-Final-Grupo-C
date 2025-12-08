@@ -163,7 +163,8 @@ La meta es contribuir a:
 - Comunidad open source
 
 # Contacto
-Grupo C
+Preguntas? Nos puedes contactar!
+Correo del equipo: proyect.ecovida@gmail.com
 
 **Gracias por leer nuestro proyecto**
 Realizado por el equipo de Ecovida
