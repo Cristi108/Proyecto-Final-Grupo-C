@@ -17,7 +17,7 @@
 | Investigador | Ammi Elizabeth | AEliza160 | Recoleccion de datos, Visualizaciones Iniciales |
 | Ivestigador | Irismar | robledoirismar230-stack | Recoleccion de datos, Funcionalidades Esenciales |
 | Desarrollo de prototipo | Saret |  ct24-saretmedina | Arquitectura de la Solución, Enfoque en el Impacto |
-| Analisis de Datos | Ostin | @usuario | Análisis exploratorio , Desarrollo del Dashboard/Aplicación |
+| Analisis de Datos | Ostin | @usuario | Desarrollo del Dashboard/Aplicación |
 | Investigador | Joshua | @usuario | Aportes teóricos, Investigacion |
 
 # Problematica
