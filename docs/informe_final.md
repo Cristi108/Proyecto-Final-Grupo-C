@@ -29,7 +29,7 @@ Este informe resume los objetivos, el método utilizado, los resultados y qué a
 
 ### **Metodología aplicada**
 
-Para el análisis utilizamos datos de:
+**Para el análisis utilizamos datos de:**
 
 • Producción de agua potable
 
@@ -40,7 +40,7 @@ Para el análisis utilizamos datos de:
 • Las fuentes fueron principalmente el IDAAN y el INEC.
 
 
-Los pasos del análisis fueron:
+**Los pasos del análisis fueron:**
 
 **1.Carga de datos:**
 Se importaron los archivos CSV de producción, consumo y enfermedades.
@@ -58,7 +58,7 @@ Se calcularon totales por año y provincia, y se revisaron tendencias.
 Se crearon gráficos para observar cómo los datos cambiaron con el tiempo.
 
 
-Para el desarrollo utilizamos:
+**Para el desarrollo utilizamos:**
 
 • Python
 
@@ -72,22 +72,25 @@ Para el desarrollo utilizamos:
 
 ## **Principales hallazgos**
 
-Después de organizar y analizar los datos, encontramos tres conclusiones importantes:
+**Después de organizar y analizar los datos, encontramos tres conclusiones importantes:**
 
-**1. Producción vs Consumo**
+1. Producción vs Consumo
 
 Panamá produce más agua de la que se consume, pero la diferencia desaparece en el camino.
 Esto indica fugas, tuberías antiguas o pérdidas en la red de distribución.
 
-**2. Enfermedades siguen ocurriendo**
+
+2. Enfermedades siguen ocurriendo
 
 A pesar de la producción alta, las enfermedades hidroalimentarias no disminuyen.
 Esto demuestra que el problema no es la cantidad de agua, sino cómo llega a las personas.
 
-**3. Provincias vulnerables**
+
+3. Provincias vulnerables
 
 Las zonas rurales y comarcas fueron las más afectadas.
-Estas áreas tienen:
+
+**Estas áreas tienen:**
 
 • Infraestructura más débil
 
@@ -101,7 +104,7 @@ Los datos muestran que mejorar la infraestructura puede reducir los casos de enf
 
 ## **Retos del proyecto**
 
-Durante el proyecto enfrentamos algunos desafíos naturales:
+**Durante el proyecto enfrentamos algunos desafíos naturales:**
 
 
 • Los archivos venían con diferentes formatos.
@@ -119,7 +122,7 @@ Cada reto nos permitió aprender más sobre el manejo de datos reales.
 
 ## **Recomendaciones**
 
-A partir de los resultados, recomendamos acciones prácticas:
+**A partir de los resultados, recomendamos acciones prácticas:**
 
 
 • Revisar las tuberías viejas y reparar fugas.
@@ -144,7 +147,7 @@ La solución no depende solo de producir más agua; depende de cuidar la infraes
 Con datos reales descubrimos que donde la red es más fuerte, hay menos enfermedades.
 Por eso, invertir en mantenimiento, monitoreo y prevención es esencial.
 
-En resumen:
+**En resumen:**
 
 **Si cuidamos la red, cuidamos el agua.**
 
