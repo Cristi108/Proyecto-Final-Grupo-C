@@ -1,11 +1,11 @@
-# Core Data Science Libraries
+# Bibliotecas basicas de ciencia de dostos
 pandas==2.0.3
 numpy==1.24.3
 
-# Visualization Libraries
+# Visualización de librerias
 matplotlib==3.7.2
 seaborn==0.12.2
 plotly==5.15.0
 
-# Dashboard Framework
+# Dashboard
 streamlit==1.25.0
