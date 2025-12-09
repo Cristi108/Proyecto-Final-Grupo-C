@@ -52,7 +52,7 @@ Búsqueda de fuentes de datos
 • Generación de métricas y visualizaciones
 
 ---
-**4. Arquitectura de la Solución**
+### **4. Arquitectura de la Solución**
 
 Los datos pasan por el siguiente proceso técnico:
 
