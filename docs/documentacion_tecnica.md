@@ -203,25 +203,35 @@ proyecto-final/
 │
 ├── data/
 │   ├── produccion_agua.csv
+│   │
 │   ├── consumo_agua.csv
+│   │
 │   └── enfermedades_hidroalimentarias.csv
 │
 ├── notebooks/
+│   │
 │   └── fase2_analisis.ipynb
 │
 ├── app/
+│   │
 │   ├── app.py
+│   │
 │   └── utils.py
 │
 ├── docs/
+│   │
 │   ├── documentacion_tecnica.md
+│   │
 │   └── reuniones.md
 │
 ├── assets/
+│   │
 │   ├── images/
+│   │
 │   └── screenshots/
 │
 ├── requirements.txt
+│
 └── README.md
 
 ---
