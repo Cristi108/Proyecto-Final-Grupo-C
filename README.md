@@ -174,3 +174,21 @@ Realizado por el equipo de Ecovida
 
 git clone [https://github.com/Cristi108/Proyecto-Final-Grupo-C]
 cd [Proyecto Final Grupo C]
+
+# Instala las Dependencias
+
+pip install -r requirements.txt
+
+# Ejecuta el Dashboard
+
+streamlit run src/dashboard.py
+
+Abre en tu Navegador:
+El tablero se abre automáticamente enhttp://localhost:8501
+
+# Enlaces importantes
+
+- Dashboard en vivo: [URL si está desplegado]
+- Conjuntos de datos utilizados: [Enlaces a las fuentes]
+- Presentación: [Enlace a diapositivas]
+- Demostración en vídeo: [Enlace si tienes vídeo]
