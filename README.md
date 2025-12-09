@@ -127,32 +127,32 @@ La meta es contribuir a:
 
 ```text
 
-└── flujo-datos/
-    ├── 01-obtencion/                          # Obtención de datos (.csv)
-    │       ├── datos_agua.csv                 
-    │       ├── hidroalinentarias.csv          
-    │       └── consumo.csv                    
-    │                                           # Herramienta: pandas.read_csv()
-    │
-    ├── 02-limpieza/                           # Limpieza de datos
-    │       └── limpieza.py                    # Herramientas: Pandas (drop, rename, astype, split)
-    │                                           # Acciones: eliminar columnas, corregir tipos, separar textos, manejar nulos
-    │
-    ├── 03-integracion/                        # Integración / Unión de datasets
-    │       └── merge.py                       # Herramienta: Pandas (merge)
-    │                                           # Acción: unir producción + enfermedades por país
-    │
-    ├── 04-transformacion/                     # Transformación de datos
-    │       └── transform.py                   # Herramientas: Pandas + NumPy
-    │                                           # Acciones: groupby, sum, mean, ordenar, convertir fechas
-    │
-    ├── 05-visualizacion/                      # Visualización de resultados
-    │       └── graficos.py                    # Herramientas: Matplotlib + Seaborn
-    │                                           # Gráficos: líneas, comparativos, countplot
-    │
-    └── 06-resultados/                         # Resultados finales
-            ├── dataset_limpio.csv             # Dataset procesado
-            └── visualizaciones/               # Imágenes generadas
+Proyecto Final Grupo C/
+│
+├── data/                                 # Carpeta con los datos originales del proyecto
+│   ├── consumo.csv                        # Archivo con datos de consumo y demanda de agua
+│   ├── datos agua.csv                     # Archivo con datos de producción de agua por años
+│   └── hidroalimentarias.csv              # Casos registrados por año/región
+│
+├── notebook/                              # Análisis y pruebas hechSas en Jupyter Notebook
+│   └── PROYECTO_FINAL_GRUPO_C.ipynb       # Archivo donde se hizo la exploración de datos, gráficas y análisis
+│
+├── app/                                   # Carpeta con la aplicación final
+│   ├── app.py                             # Código principal de la aplicación Streamlit
+│   └── utils.py                           # Funciones auxiliares reutilizables
+│
+├── docs/                                  # Documentos del proyecto
+│   ├── documentacion_tecnica.md           # Explica cómo está hecho el proyecto y decisiones técnicas
+│   ├── informe_final.md                   # Informe final del proyecto con resultados, retos, y recomendaciones
+│   └── reuniones.md                       # Registro de reuniones y acuerdos del equipo 
+│
+├── assets/                                # Recursos visuales
+│   ├── images/                            # Imágenes usadas en el proyecto
+│   └── screenshots/                       # Capturas de pantalla de la app y resultados
+│
+├── requirements.txt                       # Lista de librerías necesarias para ejecutar el proyecto
+└── README.md                              # Explicación principal del proyecto
+
 
 ```
 
