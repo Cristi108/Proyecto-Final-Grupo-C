@@ -1,25 +1,27 @@
-# **INFORME FINAL DEL PROYECTO**
+# **INFORME FINAL DEL PROYECTO** 
 
-## **Introducción**
 
-El agua es un recurso básico para la vida. En Panamá, todos los días se producen millones de galones de agua potable, pero aun así se registran cientos de casos de enfermedades relacionadas con el agua en todas las provincias. Esta situación despertó una pregunta importante:
+## **Introducción** 
 
-¿Por qué, si producimos tanta agua, todavía hay personas que se enferman?
+El agua es un recurso básico para la vida. En Panamá, todos los días se producen millones de galones de agua potable, pero aun así se registran cientos de casos de enfermedades relacionadas con el agua en todas las provincias. Esta situación despertó una pregunta importante: 
 
-Nuestro proyecto nació para analizar esta contradicción. A través de datos reales del país, buscamos comprender lo que ocurre entre la producción, el consumo y la salud pública. El objetivo fue descubrir si existe una relación entre la cantidad de agua disponible, la forma en que se distribuye y la aparición de enfermedades hidroalimentarias.
+¿Por qué, si producimos tanta agua, todavía hay personas que se enferman? 
 
-Durante el trabajo analizamos información del periodo 2018–2022 de todas las provincias, usando datos de producción y consumo de agua potable y registros de enfermedades. La intención no fue solo describir el problema, sino presentar evidencias visuales y recomendaciones prácticas que ayuden a mejorar la situación en el futuro.
+Nuestro proyecto nació para analizar esta contradicción. A través de datos reales del país, buscamos comprender lo que ocurre entre la producción, el consumo y la salud pública. El objetivo fue descubrir si existe una relación entre la cantidad de agua disponible, la forma en que se distribuye y la aparición de enfermedades hidroalimentarias. 
+
+Durante el trabajo analizamos información del periodo 2018–2022 de todas las provincias, usando datos de producción y consumo de agua potable y registros de enfermedades. La intención no fue solo describir el problema, sino presentar evidencias visuales y recomendaciones prácticas que ayuden a mejorar la situación en el futuro. 
 
 Este informe resume los objetivos, el método utilizado, los resultados y qué acciones pueden ayudar a cuidar mejor el agua y la salud de las personas.
 
 ---
-## **Objetivos y metodología**
 
-### **Objetivos del proyecto**
+## **Objetivos y metodología** 
+
+### **Objetivos del proyecto** 
 
 • Analizar la producción y consumo de agua potable en Panamá.
 
-• Comparar la disponibilidad de agua con los casos de enfermedades hidroalimentarias.
+• Comparar la disponibilidad de agua con los casos de enfermedades hidroalimentarias. 
 
 • Identificar provincias con mayor riesgo.
 
