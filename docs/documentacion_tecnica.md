@@ -1,10 +1,10 @@
 # DOCUMENTACIÓN TÉCNICA 
 
-**1. Nombre del Proyecto**
+### **1. Nombre del Proyecto**
 
-Ecovida – Monitoreo de Producción, Consumo y Enfermedades Hidroalimentarias
-
-**2. Descripción General**
+**Ecovida – Monitoreo de Producción, Consumo y Enfermedades Hidroalimentarias**
+---
+### **2. Descripción General**
 
 Este proyecto analiza tres conjuntos de datos relacionados con el agua en Panamá para el periodo 2018–2022.
 Los datos utilizados fueron:
@@ -16,23 +16,23 @@ Los datos utilizados fueron:
 • Casos de enfermedades hidroalimentarias
 
 El objetivo es comprender cómo la producción y el consumo de agua se relacionan con la aparición de enfermedades, y presentar la información de manera clara mediante un dashboard interactivo.
+---
+### **3. Metodología**
 
-**3. Metodología**
+**El proyecto se desarrolló en tres fases:**
 
-El proyecto se desarrolló en tres fases:
-
- Fase 1 – Planificación
+ **Fase 1 – Planificación**
 
 • Selección del ODS: ODS 6 – Agua limpia y saneamiento
 
-Definición de la problemática:
+**Definición de la problemática:**
 Relación entre disponibilidad de agua potable y enfermedades hidroalimentarias
 
 Asignación de roles y responsabilidades
 
 Búsqueda de fuentes de datos
 
-Fase 2 – Procesamiento y análisis de datos
+**Fase 2 – Procesamiento y análisis de datos**
 
 • Carga de los tres archivos CSV
 
@@ -42,21 +42,21 @@ Fase 2 – Procesamiento y análisis de datos
 
 • Análisis estadístico y visualización
 
-Fase 3 – Implementación
+**Fase 3 – Implementación**
 
 •Creación de dashboard básico
 
 • Funcionalidades de filtrado por año y provincia
 
 • Generación de métricas y visualizaciones
-
+---
 **4. Arquitectura de la Solución**
 
 Los datos pasan por el siguiente proceso técnico:
 
 Entrada de Datos
 
-Se utilizan tres archivos CSV:
+**Se utilizan tres archivos CSV:**
 
 • produccion_agua.csv
 
@@ -66,7 +66,8 @@ Se utilizan tres archivos CSV:
 
 • Procesamiento de Datos
 
-Se realizaron los siguientes pasos:
+
+**Se realizaron los siguientes pasos:**
 
 • Lectura con pandas
 
@@ -80,7 +81,8 @@ Se realizaron los siguientes pasos:
 
 • Análisis
 
-Se aplicaron:
+
+**Se aplicaron:**
 
 • Estadísticas descriptivas
 
@@ -90,7 +92,7 @@ Se aplicaron:
 
 • Visualizaciones
 
-Se generaron gráficos con:
+### **Se generaron gráficos con:**
 
 • matplotlib
 
@@ -109,8 +111,8 @@ Una aplicación interactiva permite:
 • Analizar casos de enfermedades
 
 • Ver recomendaciones finales
-
-**5. Visualizaciones Realizadas**
+---
+### **5. Visualizaciones Realizadas**
 
 Se generaron gráficos para apoyar la toma de decisiones.
 Los principales fueron:
@@ -144,8 +146,8 @@ Los principales fueron:
 • Gráfico de barras comparativas
 
 Estas visualizaciones se integraron en el dashboard y también se utilizaron para la presentación y análisis.
-
-**6. Dashboard**
+---
+### **6. Dashboard**
 
 La aplicación fue desarrollada con Streamlit
 
@@ -168,8 +170,8 @@ Permite seleccionar:
 Las capturas del dashboard se incluyen dentro de:
 
 assets/screenshots/
-
-**7. Documentación de Reuniones**
+---
+### **7. Documentación de Reuniones**
 
 Se creó un documento adicional que registra:
 
@@ -186,8 +188,8 @@ Se creó un documento adicional que registra:
 Este documento se sube a:
 
 docs/reuniones.md
-
-**8. Estructura del Repositorio**
+---
+### **8. Estructura del Repositorio**
 
 Esto es lo que sube al GitHub:
 
@@ -215,8 +217,8 @@ proyecto-final/
 │
 ├── requirements.txt
 └── README.md
-
-**9. Observaciones Finales**
+---
+### **9. Observaciones Finales**
 
 • Se cumplieron los lineamientos del proyecto
 
