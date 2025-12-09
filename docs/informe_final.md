@@ -25,6 +25,8 @@ Este informe resume los objetivos, el método utilizado, los resultados y qué a
 
 • Proponer recomendaciones para mejorar la calidad del agua.
 
+---
+
 ### **Metodología aplicada**
 
 Para el análisis utilizamos datos de:
@@ -36,6 +38,7 @@ Para el análisis utilizamos datos de:
 • Casos de enfermedades hidroalimentarias
 
 • Las fuentes fueron principalmente el IDAAN y el INEC.
+
 
 Los pasos del análisis fueron:
 
@@ -53,6 +56,7 @@ Se calcularon totales por año y provincia, y se revisaron tendencias.
 
 **5.Visualizaciones:**
 Se crearon gráficos para observar cómo los datos cambiaron con el tiempo.
+
 
 Para el desarrollo utilizamos:
 
@@ -99,6 +103,7 @@ Los datos muestran que mejorar la infraestructura puede reducir los casos de enf
 
 Durante el proyecto enfrentamos algunos desafíos naturales:
 
+
 • Los archivos venían con diferentes formatos.
 
 • Hubo que estandarizar columnas y nombres.
@@ -115,6 +120,7 @@ Cada reto nos permitió aprender más sobre el manejo de datos reales.
 ## **Recomendaciones**
 
 A partir de los resultados, recomendamos acciones prácticas:
+
 
 • Revisar las tuberías viejas y reparar fugas.
 
