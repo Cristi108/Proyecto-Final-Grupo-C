@@ -16,6 +16,7 @@ Los datos utilizados fueron:
 • Casos de enfermedades hidroalimentarias
 
 El objetivo es comprender cómo la producción y el consumo de agua se relacionan con la aparición de enfermedades, y presentar la información de manera clara mediante un dashboard interactivo.
+
 ---
 ### **3. Metodología**
 
@@ -49,6 +50,7 @@ Búsqueda de fuentes de datos
 • Funcionalidades de filtrado por año y provincia
 
 • Generación de métricas y visualizaciones
+
 ---
 **4. Arquitectura de la Solución**
 
@@ -111,6 +113,7 @@ Una aplicación interactiva permite:
 • Analizar casos de enfermedades
 
 • Ver recomendaciones finales
+
 ---
 ### **5. Visualizaciones Realizadas**
 
@@ -146,6 +149,7 @@ Los principales fueron:
 • Gráfico de barras comparativas
 
 Estas visualizaciones se integraron en el dashboard y también se utilizaron para la presentación y análisis.
+
 ---
 ### **6. Dashboard**
 
@@ -170,6 +174,7 @@ Permite seleccionar:
 Las capturas del dashboard se incluyen dentro de:
 
 assets/screenshots/
+
 ---
 ### **7. Documentación de Reuniones**
 
@@ -188,6 +193,7 @@ Se creó un documento adicional que registra:
 Este documento se sube a:
 
 docs/reuniones.md
+
 ---
 ### **8. Estructura del Repositorio**
 
@@ -217,6 +223,7 @@ proyecto-final/
 │
 ├── requirements.txt
 └── README.md
+
 ---
 ### **9. Observaciones Finales**
 
