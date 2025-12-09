@@ -168,3 +168,9 @@ Correo del equipo: proyect.ecovida@gmail.com
 
 **Gracias por leer nuestro proyecto**
 Realizado por el equipo de Ecovida
+
+
+# Instalación y Ejecución
+
+git clone [https://github.com/Cristi108/Proyecto-Final-Grupo-C]
+cd [Proyecto Final Grupo C]
