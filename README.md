@@ -22,7 +22,7 @@
 
 # Problematica
 
-# Que problema estamos resolviendo?
+# Qué problema estamos resolviendo?
 
 Panama produce grandes cantidades de agua potable, por en todas las provincias del pais se registran casos de enfermedades hidroalimentarias.
 
@@ -31,9 +31,9 @@ Esto indica que algo sucede entre la prouccion, la distribucion y la calidad del
 Las posibles causas son:
 
 - Fugas en las tuberias
-- redes antiguas que no reciben mantenimiento
-- contaminacion por filtraciones desde el suelo
-- perdida de presion en las tuberias
+- Redes antiguas que no reciben mantenimiento
+- Contaminacion por filtraciones desde el suelo
+- Perdida de presion en las tuberias
 
 Aunque hay agua, no siempre llega limpia ni segura a las personas
 
@@ -54,7 +54,7 @@ Este problema puede afectar a cualquier persona, pero especificamente a:
 
 - Familias que dependen del agua de grifo
 - Provincias rurales y comarcas
-- Ninos y adultos mayores
+- Niñoos y adultos mayores
 
 # Alcance del Proyecto
 
