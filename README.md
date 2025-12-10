@@ -137,9 +137,7 @@ Proyecto Final Grupo C/
 ├── notebook/                              # Análisis y pruebas hechSas en Jupyter Notebook
 │   └── PROYECTO_FINAL_GRUPO_C.ipynb       # Archivo donde se hizo la exploración de datos, gráficas y análisis
 │
-├── app/                                   # Carpeta con la aplicación final
-│   ├── app.py                             # Código principal de la aplicación Streamlit
-│   └── utils.py                           # Funciones auxiliares reutilizables
+├── app.py                                  
 │
 ├── docs/                                  # Documentos del proyecto
 │   ├── documentacion_tecnica.md           # Explica cómo está hecho el proyecto y decisiones técnicas
