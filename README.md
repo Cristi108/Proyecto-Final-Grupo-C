@@ -135,7 +135,8 @@ Proyecto Final Grupo C/
 │
 ├── cuadernos/                               # análisis y pruebas realizados en google colab
 │   ├── Fase_2.ipynb                         # exploración de datos, estadísticas y visualizaciones
-│   └── Punto_3_3.ipynb                      # análisis del impacto y discusión de la fase 3
+│   ├──Punto_3_3.ipynb                       # análisis del impacto y discusión de la fase 3
+|   └── fase_3.1.py                          # elaboracion del dashboard
 │
 ├── dashboard/                               # carpeta con la aplicación final
 │   ├── dashbord.py                          # código principal de la aplicación (streamlit o análisis final)
