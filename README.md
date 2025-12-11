@@ -18,7 +18,7 @@
 | Ivestigador | Irismar | robledoirismar230-stack | Recoleccion de datos, Funcionalidades Esenciales |
 | Desarrollo de prototipo | Saret |  ct24-saretmedina | Arquitectura de la Solución, Enfoque en el Impacto |
 | Analisis de Datos | Ostin | opatino2318 | Desarrollo del Dashboard/Aplicación |
-| Investigador | Joshua | @usuario | Aportes teóricos, Investigacion |
+| Investigador | Joshua | joshalexhung-stpy | Aportes teóricos, Investigacion |
 
 # Problematica
 
