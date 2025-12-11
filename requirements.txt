@@ -1,11 +1,12 @@
-# Bibliotecas basicas de ciencia de dostos
+# librerías principales para análisis de datos
 pandas==2.0.3
 numpy==1.24.3
 
-# Visualización de librerias
+# librerías para visualización
 matplotlib==3.7.2
 seaborn==0.12.2
 plotly==5.15.0
 
-# Dashboard
-streamlit==1.25.0
+# utilidad usada en google colab (markdown en fase 3.3)
+ipython==8.12.0
+
