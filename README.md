@@ -181,10 +181,10 @@ pip install -r requirements.txt
 
 # Ejecuta el Dashboard
 
-streamlit run src/dashboard.py
-
 Abre en tu Navegador:
-El tablero se abre automáticamente enhttp://localhost:8501
+https://miprimerrepositorio-bau26ntybkem64zsucqiyb.streamlit.app/
+
+El tablero se ejecutará automaticamente.
 
 # Enlaces importantes
 
