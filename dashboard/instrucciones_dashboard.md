@@ -90,6 +90,7 @@ streamlit run app.py
 A continuación se incluye el código completo usado para generar las visualizaciones principales. Este código puede copiarse directamente en un archivo llamado app.py.
 
 Código
+```
 # -*- coding: utf-8 -*-
 """dashboard.ipynb"""
 
@@ -290,3 +291,4 @@ fig.update_layout(
 )
 
 fig.show()
+```
