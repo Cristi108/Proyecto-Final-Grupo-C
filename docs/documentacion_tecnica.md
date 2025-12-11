@@ -208,11 +208,12 @@ Proyecto Final Grupo C/
 │   └── hidroalimentarias.csv                # archivo con los casos registrados por año o región
 │
 ├── cuadernos/                               # análisis y pruebas realizados en google colab
-│   ├── Fase_2.ipynb                          # exploración de datos, estadísticas y visualizaciones
-│   └── Punto_3_3.ipynb                       # análisis del impacto y discusión de la fase 3
+│   ├── Fase_2.ipynb                         # exploración de datos, estadísticas y visualizaciones
+│   └── Punto_3_3.ipynb                      # análisis del impacto y discusión de la fase 3
 │
-├── app/                                     # carpeta con la aplicación final
-│   ├── app.py                               # código principal de la aplicación (streamlit o análisis final)
+├── dashboard/                               # carpeta con la aplicación final
+│   ├── dashbord.py                          # código principal de la aplicación (streamlit o análisis final)
+│   └── instrucciones_dashboard.md
 │
 ├── docs/                                    # documentos del proyecto
 │   ├── documentacion_tecnica.md             # explicación técnica del proyecto y decisiones tomadas
