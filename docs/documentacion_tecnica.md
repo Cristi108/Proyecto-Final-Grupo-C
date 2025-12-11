@@ -209,13 +209,15 @@ Proyecto Final Grupo C/
 │
 ├── cuadernos/                               # análisis y pruebas realizados en google colab
 │   ├── Fase_2.ipynb                         # exploración de datos, estadísticas y visualizaciones
-│   └── Punto_3_3.ipynb                      # análisis del impacto y discusión de la fase 3
+│   ├──Punto_3_3.ipynb                       # análisis del impacto y discusión de la fase 3
+|   └── fase_3.1.py                          # elaboracion del dashboard
 │
 ├── dashboard/                               # carpeta con la aplicación final
 │   ├── dashbord.py                          # código principal de la aplicación (streamlit o análisis final)
-│   └── instrucciones_dashboard.md
+│   └── instrucciones_dashboard.md           # intrucciones para la ejcucion del dashboard
 │
 ├── docs/                                    # documentos del proyecto
+|   ├── Ecovida.pdf                          # Pdf de las diapositivas de la presentacion
 │   ├── documentacion_tecnica.md             # explicación técnica del proyecto y decisiones tomadas
 │   ├── informe_final.md                     # informe final con resultados, análisis y recomendaciones
 │   ├── fase_1_proyecto_grupo_c.pdf          # fase 1 del proyecto ecovida
@@ -224,7 +226,7 @@ Proyecto Final Grupo C/
 ├── assets/                                  # recursos visuales del proyecto
 │   ├── images_del_2.2/                      # imágenes y gráficas del análisis exploratorio 2.2
 │   ├── images_del_2.3/                      # imágenes y gráficas del análisis 2.3
-│   └── screenshots/                         # capturas de pantalla de la app y resultados
+│   └── screenshots del dashboard/           # capturas de pantalla de la app y resultados
 │
 ├── requirements.txt                         # librerías necesarias para ejecutar el proyecto
 └── README.md                                # documentación principal del proyecto
