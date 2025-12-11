@@ -1,1 +1,292 @@
-Se puede copiar y pegar el dashboard en google colab
+# Dashboard del Proyecto Ecovida
+## Instrucciones de Uso y Ejecución
+
+Este documento explica cómo funciona el dashboard desarrollado en Streamlit, qué datos utiliza y cómo se puede ejecutar tanto en Google Colab como en Streamlit Cloud. Está pensado para que cualquier persona del equipo pueda comprenderlo y usarlo sin problemas.
+
+---
+### 1. Descripción General del Dashboard
+
+El dashboard muestra información relacionada con el consumo de agua, la producción por provincia y los casos de enfermedades hídroalimentarias entre los años 2018 y 2022.
+Fue desarrollado en Python utilizando las librerías pandas, plotly.express y plotly.graph_objects.
+La interfaz fue creada con Streamlit, lo que permite que las gráficas sean interactivas.
+
+Las secciones principales del dashboard son:
+
+Consumo de agua por tipo de usuario (comercial, industrial, gobierno y residencial).
+
+Producción y consumo de agua por provincia.
+
+Casos de enfermedades hídroalimentarias organizadas por:
+
+año
+
+enfermedad
+
+provincia
+
+comarca
+
+---
+### 2. Librerías utilizadas
+
+El archivo requirements.txt incluye las dependencias necesarias para ejecutar el dashboard.
+
+Las librerías principales son:
+
+pandas
+plotly
+streamlit
+
+---
+### 3. Ejecución del Dashboard desde Streamlit Cloud
+
+El dashboard se puede ejecutar directamente desde el siguiente enlace:
+
+https://miprimerrepositorio-bau26ntybkem64zsucqiyb.streamlit.app/
+
+No es necesario instalar nada para verlo.
+
+---
+### 4. Cómo ejecutar el Dashboard desde Google Colab
+
+Si se desea probar el dashboard desde Google Colab, se pueden seguir estos pasos:
+
+Crear un nuevo cuaderno en Google Colab.
+
+Copiar y pegar el código completo del dashboard.
+
+Ejecutar el siguiente comando para habilitar Streamlit dentro de Colab:
+
+!pip install streamlit
+!pip install pyngrok
+
+
+Ejecutar el dashboard dentro del cuaderno con:
+
+!streamlit run app.py & npx localtunnel --port 8501
+
+
+Esto genera un enlace temporal donde se puede visualizar el dashboard.
+
+---
+### 5. Cómo ejecutar el Dashboard en Visual Studio Code (opcional)
+
+Si en algún momento se desea ejecutar el dashboard desde Visual Studio Code:
+
+Abrir la carpeta del proyecto.
+
+Instalar las librerías con:
+
+pip install -r requirements.txt
+
+
+Ejecutar el dashboard con:
+
+streamlit run app.py
+
+---
+### 6. Código del Dashboard
+
+A continuación se incluye el código completo usado para generar las visualizaciones principales. Este código puede copiarse directamente en un archivo llamado app.py.
+
+Código
+# -*- coding: utf-8 -*-
+"""dashboard.ipynb"""
+
+import pandas as pd
+import plotly.express as px
+
+data = {
+    'años': [2018, 2019, 2020, 2021, 2022],
+    'comercial': [65, 65, 60, 58, 60],
+    'industrial': [7, 7, 6, 5, 6],
+    'gobierno': [37, 37, 37, 37, 37],
+    'residencial': [317, 324, 330, 336, 341]
+}
+
+df = pd.DataFrame(data)
+
+df_long = df.melt(id_vars='años',
+                  var_name='tipo de consumo',
+                  value_name='valor')
+
+fig = px.scatter(
+    df_long,
+    x='años',
+    y='valor',
+    color='tipo de consumo',
+    size='valor',
+    hover_name='tipo de consumo',
+    size_max=50,
+    labels={"valor": "Consumo"}
+)
+
+fig.show()
+
+import pandas as pd
+import plotly.express as px
+
+data = {
+    'Años': [2018, 2019, 2020, 2021, 2022],
+    'TOTAL':[718.8,708.1,720.9,717.8,735.8],
+    'Panamá': [378.3,369.7,379.8,370.7,373.9],
+    'Panamá Oeste': [120.7,125.2,125.5,125.9,133.8],
+    'Veraguas': [21.6,21.7,21.8,24.0,26.2],
+    'Los Santos': [11.8,12.4,12.3,12.7,12.7],
+    'Herrera': [14.0,14.3,14.2,15.1,14.6],
+    'Darién': [14.0,14.3,14.2,15.1,14.6],
+    'Chiriquí': [61.5,49.2,49.7,48.1,55.6],
+    'Coclé': [19.9,22.3,22.2,22.6,23.4],
+    'Colón': [69.3,66.9,67.8,69.7,67.9],
+    'Bocas del Toro': [20.1,22.4,23.2,25.1,23.4],
+}
+
+df = pd.DataFrame(data)
+
+df_long = df.melt(
+    id_vars='Años',
+    var_name='Provincia',
+    value_name='valor'
+)
+
+fig = px.bar(
+    df_long,
+    x='Años',
+    y='valor',
+    color='valor',
+    color_continuous_scale='Tealrose',
+    facet_col='Provincia',
+    facet_col_wrap=4,
+    title="Consumo de agua por Provincia",
+    labels={"valor": "Datos de agua"}
+)
+
+fig.update_layout(
+    coloraxis_colorbar=dict(
+        title="Valor",
+        thickness=15
+    ),
+    showlegend=False
+)
+
+fig.show()
+
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+
+data = {
+    'Año': [2018, 2019, 2020, 2021, 2022],
+    'Amibiasis': [3858, 4306, 1856, 2362, 2457],
+    'Diarrea': [257817, 277872, 102743, 118274, 174603],
+    'Giardiasis': [96923, 100992, 2061, 44336, 63073],
+    'Hepatitis A': [0, 0, 39, 7, 0],
+    'Intoxicación alimentaria': [1298, 1149, 717, 1067, 1433],
+    'Salmonellosis': [49, 39, 20, 43, 27],
+    'Shigelosis': [30, 26, 0, 13, 33]
+}
+
+df = pd.DataFrame(data)
+df_long = df.melt(id_vars='Año', var_name='Enfermedad', value_name='Casos')
+
+provincias = pd.DataFrame({
+    'Provincia': ['Panamá', 'Panamá Oeste', 'Chiriquí', 'Colón', 'Coclé'],
+    'Casos': [150000, 90000, 70000, 45000, 30000]
+})
+
+comarcas = pd.DataFrame({
+    'Comarca': ['Guna Yala', 'Ngäbe-Buglé', 'Emberá-Wounaan'],
+    'Casos': [25000, 40000, 12000]
+})
+
+fig = go.Figure()
+
+for enfermedad in df_long["Enfermedad"].unique():
+    df_temp = df_long[df_long["Enfermedad"] == enfermedad]
+    fig.add_trace(go.Bar(
+        x=df_temp["Casos"],
+        y=df_temp["Año"],
+        name=enfermedad,
+        orientation="h",
+        visible=True
+    ))
+
+t1 = len(fig.data)
+
+df_enf = df_long.groupby("Enfermedad")["Casos"].sum().reset_index()
+for i, row in df_enf.iterrows():
+    fig.add_trace(go.Bar(
+        x=[row["Casos"]],
+        y=[row["Enfermedad"]],
+        name=row["Enfermedad"],
+        orientation="h",
+        visible=False
+    ))
+
+t2 = len(fig.data) - t1
+
+for i, row in provincias.iterrows():
+    fig.add_trace(go.Bar(
+        x=[row["Casos"]],
+        y=[row["Provincia"]],
+        name=row["Provincia"],
+        orientation="h",
+        visible=False
+    ))
+
+t3 = len(fig.data) - (t1 + t2)
+
+for i, row in comarcas.iterrows():
+    fig.add_trace(go.Bar(
+        x=[row["Casos"]],
+        y=[row["Comarca"]],
+        name=row["Comarca"],
+        orientation="h",
+        visible=False
+    ))
+
+t4 = len(fig.data) - (t1 + t2 + t3)
+
+fig.update_layout(
+    updatemenus=[
+        dict(
+            buttons=[
+                dict(
+                    label="Por Año",
+                    method="update",
+                    args=[{"visible":
+                           [True]*t1 + [False]*(t2+t3+t4)},
+                          {"title": "Casos por Año"}]
+                ),
+                dict(
+                    label="Por Enfermedad",
+                    method="update",
+                    args=[{"visible":
+                           [False]*t1 + [True]*t2 + [False]*(t3+t4)},
+                          {"title": "Casos por Enfermedad"}]
+                ),
+                dict(
+                    label="Por Provincia",
+                    method="update",
+                    args=[{"visible":
+                           [False]*(t1+t2) + [True]*t3 + [False]*t4},
+                          {"title": "Casos por Provincia"}]
+                ),
+                dict(
+                    label="Por Comarca",
+                    method="update",
+                    args=[{"visible":
+                           [False]*(t1+t2+t3) + [True]*t4},
+                          {"title": "Casos por Comarca"}]
+                )
+            ],
+            x=0.1,
+            y=1.1,
+            direction="down"
+        )
+    ],
+    height=600,
+    title="Dashboard Interactivo de Enfermedades Hídroalimentarias"
+)
+
+fig.show()
