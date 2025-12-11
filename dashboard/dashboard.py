@@ -211,3 +211,5 @@ fig.update_layout(
 )
 
 fig.show()
+
+# Se puede ejecutar en Goggle Colab
