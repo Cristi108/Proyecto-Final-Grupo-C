@@ -3,7 +3,7 @@
 ### **1. Nombre del Proyecto**
 
 **Ecovida – Monitoreo de Producción, Consumo y Enfermedades Hidroalimentarias**
----
+
 ### **2. Descripción General**
 
 Este proyecto analiza tres conjuntos de datos relacionados con el agua en Panamá para el periodo 2018–2022.
@@ -200,30 +200,34 @@ docs/reuniones.md
 Esto es lo que sube al GitHub:
 
 ```
-proyecto-final/
-|
-├── data/
-│   ├── produccion_agua.csv
-│   ├── consumo_agua.csv
-│   └── enfermedades_hidroalimentarias.csv
-|
-├── notebooks/
-│   └── fase2_analisis.ipynb
-|
-├── app/
-│   ├── app.py
-│   └── utils.py
-|
-├── docs/
-│   ├── documentacion_tecnica.md
-│   └── reuniones.md
-|
-├── assets/
-│   ├── images/
-│   └── screenshots/
-|
-├── requirements.txt
-└── README.md
+Proyecto Final Grupo C/
+│
+├── datos/                                   # carpeta con los datos originales del proyecto
+│   ├── consumo.csv                          # archivo con datos de consumo y demanda de agua
+│   ├── datos_agua.csv                       # archivo con datos de producción de agua por años
+│   └── hidroalimentarias.csv                # archivo con los casos registrados por año o región
+│
+├── cuadernos/                               # análisis y pruebas realizados en google colab
+│   ├── Fase_2.ipynb                          # exploración de datos, estadísticas y visualizaciones
+│   └── Punto_3_3.ipynb                       # análisis del impacto y discusión de la fase 3
+│
+├── app/                                     # carpeta con la aplicación final
+│   ├── app.py                               # código principal de la aplicación (streamlit o análisis final)
+│
+├── docs/                                    # documentos del proyecto
+│   ├── documentacion_tecnica.md             # explicación técnica del proyecto y decisiones tomadas
+│   ├── informe_final.md                     # informe final con resultados, análisis y recomendaciones
+│   ├── fase_1_proyecto_grupo_c.pdf          # fase 1 del proyecto ecovida
+│   └── reuniones.md                         # registro de reuniones, acuerdos y organización del equipo
+│
+├── assets/                                  # recursos visuales del proyecto
+│   ├── images_del_2.2/                      # imágenes y gráficas del análisis exploratorio 2.2
+│   ├── images_del_2.3/                      # imágenes y gráficas del análisis 2.3
+│   └── screenshots/                         # capturas de pantalla de la app y resultados
+│
+├── requirements.txt                         # librerías necesarias para ejecutar el proyecto
+└── README.md                                # documentación principal del proyecto
+
 ```
 
 ---
