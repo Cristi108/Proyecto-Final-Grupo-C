@@ -129,29 +129,31 @@ La meta es contribuir a:
 
 Proyecto Final Grupo C/
 │
-├── data/                                 # Carpeta con los datos originales del proyecto
-│   ├── consumo.csv                        # Archivo con datos de consumo y demanda de agua
-│   ├── datos agua.csv                     # Archivo con datos de producción de agua por años
-│   └── hidroalimentarias.csv              # Casos registrados por año/región
+├── datos/                                   # carpeta con los datos originales del proyecto
+│   ├── consumo.csv                          # archivo con datos de consumo y demanda de agua
+│   ├── datos_agua.csv                       # archivo con datos de producción de agua por años
+│   └── hidroalimentarias.csv                # archivo con los casos registrados por año o región
 │
-├── notebook/                              # Análisis y pruebas hechSas en Jupyter Notebook
-│   └── PROYECTO_FINAL_GRUPO_C.ipynb       # Archivo donde se hizo la exploración de datos, gráficas y análisis
+├── cuadernos/                               # análisis y pruebas realizados en google colab
+│   ├── Fase_2.ipynb                          # exploración de datos, estadísticas y visualizaciones
+│   └── Punto_3_3.ipynb                       # análisis del impacto y discusión de la fase 3
 │
-├── app.py                                  
+├── app/                                     # carpeta con la aplicación final
+│   ├── app.py                               # código principal de la aplicación (streamlit o análisis final)
 │
-├── docs/                                  # Documentos del proyecto
-│   ├── documentacion_tecnica.md           # Explica cómo está hecho el proyecto y decisiones técnicas
-│   ├── informe_final.md                   # Informe final del proyecto con resultados, retos, y recomendaciones
-│   └── reuniones.md                       # Registro de reuniones y acuerdos del equipo 
+├── docs/                                    # documentos del proyecto
+│   ├── documentacion_tecnica.md             # explicación técnica del proyecto y decisiones tomadas
+│   ├── informe_final.md                     # informe final con resultados, análisis y recomendaciones
+│   ├── fase_1_proyecto_grupo_c.pdf          # fase 1 del proyecto ecovida
+│   └── reuniones.md                         # registro de reuniones, acuerdos y organización del equipo
 │
-├── assets/                                # Recursos visuales
-│   ├── images/                            # Imágenes usadas en el proyecto
-│   └── screenshots/                       # Capturas de pantalla de la app y resultados
+├── assets/                                  # recursos visuales del proyecto
+│   ├── images_del_2.2/                      # imágenes y gráficas del análisis exploratorio 2.2
+│   ├── images_del_2.3/                      # imágenes y gráficas del análisis 2.3
+│   └── screenshots/                         # capturas de pantalla de la app y resultados
 │
-├── requirements.txt                       # Lista de librerías necesarias para ejecutar el proyecto
-└── README.md                              # Explicación principal del proyecto
-
-
+├── requirements.txt                         # librerías necesarias para ejecutar el proyecto
+└── README.md                                # documentación principal del proyecto
 ```
 
 # Agradecimientos
