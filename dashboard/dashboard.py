@@ -92,6 +92,15 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 
+colores_enfermedades = {
+    "Amibiasis": "#636EFA",
+    "Diarrea": "#EF553B",
+    "Giardiasis": "#00CC96",
+    "Hepatitis A": "#AB63FA",
+    "Intoxicación alimentaria": "#FFA15A",
+    "Salmonellosis": "#19D3F3",
+    "Shigelosis": "#FF6692"
+}
 
 data = {
     'Año': [2018, 2019, 2020, 2021, 2022],
@@ -103,6 +112,7 @@ data = {
     'Salmonellosis': [49, 39, 20, 43, 27],
     'Shigelosis': [30, 26, 0, 13, 33]
 }
+
 df = pd.DataFrame(data)
 df_long = df.melt(id_vars='Año', var_name='Enfermedad', value_name='Casos')
 
@@ -127,30 +137,45 @@ for enfermedad in df_long["Enfermedad"].unique():
         y=df_temp["Año"],
         name=enfermedad,
         orientation="h",
+        text=df_temp["Casos"],
+        textposition="outside",
         visible=True
     ))
 
 t1 = len(fig.data)
 
-df_enf = df_long.groupby("Enfermedad")["Casos"].sum().reset_index()
-for i, row in df_enf.iterrows():
+enfermedades = [
+    'Amibiasis', 'Diarrea', 'Giardiasis', 'Hepatitis A',
+    'Intoxicación alimentaria', 'Salmonellosis', 'Shigelosis'
+]
+
+df_enfer = pd.DataFrame({
+     "Enfermedad": enfermedades,
+    "Casos": [df[e].sum() for e in enfermedades]
+})
+for i, row in df_enfer.iterrows():
     fig.add_trace(go.Bar(
         x=[row["Casos"]],
         y=[row["Enfermedad"]],
         name=row["Enfermedad"],
         orientation="h",
+        marker=dict(color=colores_enfermedades[row["Enfermedad"]]),
+        text=[row["Casos"]],
+        textposition="outside",
         visible=False
     ))
 
-t2 = len(fig.data) - t1
+# Cantidad de trazas añadidas en esta sección
+t2 = len(df_enfer)
 
-# -------- 3. BARRAS POR PROVINCIA --------
 for i, row in provincias.iterrows():
     fig.add_trace(go.Bar(
         x=[row["Casos"]],
         y=[row["Provincia"]],
         name=row["Provincia"],
         orientation="h",
+        text=[row["Casos"]],
+        textposition="outside",
         visible=False
     ))
 
@@ -163,6 +188,8 @@ for i, row in comarcas.iterrows():
         y=[row["Comarca"]],
         name=row["Comarca"],
         orientation="h",
+        text=[row["Casos"]],
+        textposition="outside",
         visible=False
     ))
 
@@ -172,38 +199,61 @@ fig.update_layout(
     updatemenus=[
         dict(
             buttons=[
+
+                # ---- POR AÑO ----
                 dict(
                     label="Por Año",
                     method="update",
-                    args=[{"visible":
-                           [True]*t1 + [False]*(t2+t3+t4)},
-                          {"title": "Casos por Año"}]
+                    args=[
+                        {"visible": [True]*t1 + [False]*(t2+t3+t4)},
+                        {"title": "Casos por Año", "xaxis.title": "Casos",
+                            "yaxis.title": "Año",
+                            "yaxis.categoryorder": "array",
+                            "yaxis.categoryarray": df["Año"].tolist()
+                        }
+                    ],
                 ),
+
+                # ---- POR ENFERMEDAD ----
                 dict(
                     label="Por Enfermedad",
                     method="update",
-                    args=[{"visible":
-                           [False]*t1 + [True]*t2 + [False]*(t3+t4)},
-                          {"title": "Casos por Enfermedad"}]
-                ),
+                    args=[
+                        {"visible": [False]*t1 + [True]*t2 + [False]*(t3+t4)},
+                        {"title": "Casos por Enfermedad", "xaxis": {"title": "Casos"}, "yaxis": {"title": "Enfermedad"}}
+                        ]
+                    ),
+                # ---- POR PROVINCIA ----
                 dict(
                     label="Por Provincia",
                     method="update",
-                    args=[{"visible":
-                           [False]*(t1+t2) + [True]*t3 + [False]*t4},
-                          {"title": "Casos por Provincia"}]
+                    args=[
+                        {"visible": [False]*(t1+t2) + [True]*t3 + [False]*t4},
+                        {"title": "Casos por Provincia",
+                        "xaxis.title": "Casos",
+                        "yaxis.title": "Provincia",
+                        }
+                    ],
                 ),
+
+
+                # ---- POR COMARCA ----
                 dict(
                     label="Por Comarca",
                     method="update",
-                    args=[{"visible":
-                           [False]*(t1+t2+t3) + [True]*t4},
-                          {"title": "Casos por Comarca"}]
-                )
+                    args=[
+                        {"visible": [False]*(t1+t2+t3) + [True]*t4},
+                        {"title": "Casos por Comarca",
+                         "xaxis.title": "Casos",
+                         "yaxis.title": "Comarca",
+                        }
+                    ],
+                ),
+
             ],
-            x=0.1,
-            y=1.1,
-            direction="down"
+            direction="down",
+            x=0.15,
+            y=1.1
         )
     ],
     height=600,
