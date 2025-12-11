@@ -188,5 +188,6 @@ El tablero se abre automáticamente enhttp://localhost:8501
 
 # Enlaces importantes
 
+- Dashboard:[https://miprimerrepositorio-bau26ntybkem64zsucqiyb.streamlit.app/]
 - Presentación: [https://www.canva.com/design/DAG6lq3idBM/TitIU82I3P5OW17qjk38Ig/edit?utm_content=DAG6lq3idBM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton]
 - Demostración en vídeo: [https://www.canva.com/design/DAG7EHt9goE/Sz6cjJknhykwHOshjQ7YJA/edit?utm_content=DAG7EHt9goE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton]
